@@ -1,5 +1,5 @@
 {
-    "name": "warrenlee-jquery.dfp",
+    "name": "jquery.dfp",
     "version": "2.4.2a",
     "devDependencies": {
         "grunt": "~0.4",

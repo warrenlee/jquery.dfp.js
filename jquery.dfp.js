@@ -105,6 +105,7 @@
                 disablePublisherConsole: false,
                 disableInitialLoad: false,
                 setCentering: false,
+                setRequestNonPersonalizedAds: 0,
                 noFetch: false,
                 namespace: undefined,
                 sizeMapping: {}
@@ -302,6 +303,8 @@
                 if (dfpOptions.setCentering) {
                     pubadsService.setCentering(true);
                 }
+
+                pubadsService.setRequestNonPersonalizedAds(dfpOptions.setRequestNonPersonalizedAds);
 
                 // Setup event listener to listen for renderEnded event and fire callbacks.
                 pubadsService.addEventListener('slotRenderEnded', function (event) {
